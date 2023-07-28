@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin:0;
+        }
+        .box{
+           width: 500px;
+           height: 500px;
+           color: #fff; 
+           background-color:blue;
+           padding: 10px;
+           box-sizing: border-box;
+           margin-top: 10px;
+           border: 15px dotted;
+           background-clip: content-box;
+        }
+        .body{
+            width: 100%;
+            height: 500px;
+            background-image:url('./repeat.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 15px dotted;
+            padding: 20px;
+            box-sizing: border-box;
+            background-origin: border-box;
+            background-position: top 50px right 10px; /* y - x */ 
+        }
+        .header{
+            width: 100%;
+            height: 500px;
+            background: url('./lamborghini.jpg') no-repeat center / contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="body"></div>
+    <div class="box">Đây là nội dung</div>
+</body>
+</html>
